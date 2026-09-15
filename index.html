@@ -66,9 +66,9 @@ border:1px solid #6b8a93;background:#fff;color:#17333b;margin-left:6px">
 </label>
 <label>layout
 <select id="expcase" style="font:inherit;padding:3px 6px;border-radius:4px;
-border:1px solid #6b8a93;background:#fff;color:#17333b;margin-left:6px"><option value="incumbent-u3-p6-B6-protected">The incumbent &#8212; u3-p6-B6-protected</option><option value="A2r3-host-lock-noworse_all-s0">RECOMMENDED &#183; Re-aim, same surfaces</option><option value="A2r2-host-lock-blend-s1">Even out the tree</option><option value="A1r2-free-host-noworse-s2">Chase the average</option></select>
+border:1px solid #6b8a93;background:#fff;color:#17333b;margin-left:6px"><option value="H2-host-lock-noworse_all-s1">RECOMMENDED &#183; passes the mounting screen, same surfaces</option><option value="incumbent-u3-p6-B6-protected">The incumbent &#8212; 4 of 5 overheads fail the mounting screen</option><option value="A2r3-host-lock-noworse_all-s0">SUPERSEDED &#183; was recommended, fails the mounting screen</option><option value="H2-host-lock-blend4-s3">Kindest to the weak pad &#183; passes</option><option value="H1-host-free-mean-s5">Highest average &#183; passes, bigger hotspot</option></select>
 </label>
-<span style="opacity:.62;font-variant-numeric:tabular-nums">A2r3-host-lock-noworse_all-s0</span>
+<span style="opacity:.62;font-variant-numeric:tabular-nums">H2-host-lock-noworse_all-s1</span>
 </div>
 <script>
 (function(){var s=document.getElementById('expcase');
@@ -348,7 +348,7 @@ function apply(){
     }
   });
   var s=document.getElementById('expcase');
-  if(s){ var u=(location.hash.match(/case=([A-Za-z0-9._-]+)/)||[])[1]||new URLSearchParams(location.search).get('case')||'A2r3-host-lock-noworse_all-s0'; if(u){ s.value=u; } }
+  if(s){ var u=(location.hash.match(/case=([A-Za-z0-9._-]+)/)||[])[1]||new URLSearchParams(location.search).get('case')||'H2-host-lock-noworse_all-s1'; if(u){ s.value=u; } }
 }
 if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',apply);}else{apply();}
 setTimeout(apply,300); setTimeout(apply,1200); setTimeout(apply,3000);
@@ -473,7 +473,7 @@ html,body{overflow:hidden;background:#eaf0ee!important}
 </div></aside>
 <div id="r05-tags"></div>
 <div id="r05-note"><div id="r05-caption">Exact saved positions and aims. Fixture housings and mounts remain provisional.</div><div id="r05-legend" hidden><span id="r05-legend-title">DLI &#183; mol/m&#178;/day</span><div class="r05-gradient"></div><span id="r05-legend-scale">0 &#183; 1 &#183; 2 &#183; 3 &#183; 4 &#183; 6 &#183; 8+</span></div></div>
-<script src="common.js"></script><script>(function(){var h=(location.hash.match(/case=([A-Za-z0-9._-]+)/)||[])[1];var q=new URLSearchParams(location.search).get('case');var c=h||q||'A2r3-host-lock-noworse_all-s0';if(!/^[A-Za-z0-9._-]+$/.test(c))c='A2r3-host-lock-noworse_all-s0';document.write('<scr'+'ipt src="data/'+c+'.js"><\/scr'+'ipt>');})();</script><script>window.R05DATA=Object.assign({},R05COMMON,R05CASE);document.title=(R05CASE.label||'experiment')+' \u00b7 budget optimisation experiment';</script><script src="viewer.js"></script>
+<script src="common.js"></script><script>(function(){var h=(location.hash.match(/case=([A-Za-z0-9._-]+)/)||[])[1];var q=new URLSearchParams(location.search).get('case');var c=h||q||'H2-host-lock-noworse_all-s1';if(!/^[A-Za-z0-9._-]+$/.test(c))c='H2-host-lock-noworse_all-s1';document.write('<scr'+'ipt src="data/'+c+'.js"><\/scr'+'ipt>');})();</script><script>window.R05DATA=Object.assign({},R05COMMON,R05CASE);document.title=(R05CASE.label||'experiment')+' \u00b7 budget optimisation experiment';</script><script src="viewer.js"></script>
 <script data-bonsai-pad-names src="pad-names.js"></script>
 
 <script>window.BONSAI_GEOMETRY={"revision": "balcony-300-v1", "balconyUndersideAboveDeckM": 3.0, "wellFloorZ": -0.65, "glazingAssemblyHeadZ": 3.0};</script>
